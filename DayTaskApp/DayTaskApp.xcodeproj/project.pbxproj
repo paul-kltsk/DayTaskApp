@@ -12,6 +12,8 @@
 		05BE4C812C3D46F200695D98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4C802C3D46F200695D98 /* ViewController.swift */; };
 		05BE4C862C3D46F500695D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BE4C852C3D46F500695D98 /* Assets.xcassets */; };
 		05BE4C892C3D46F500695D98 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 05BE4C882C3D46F500695D98 /* Base */; };
+		05BE4C932C3D498F00695D98 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4C922C3D498F00695D98 /* UIColor+Extension.swift */; };
+		05BE4C952C3D49CB00695D98 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4C942C3D49CB00695D98 /* AppColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		05BE4C852C3D46F500695D98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05BE4C882C3D46F500695D98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		05BE4C8A2C3D46F500695D98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05BE4C922C3D498F00695D98 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		05BE4C942C3D49CB00695D98 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,7 @@
 		05BE4C7B2C3D46F200695D98 /* DayTaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				05BE4C902C3D493900695D98 /* Resources */,
 				05BE4C7C2C3D46F200695D98 /* AppDelegate.swift */,
 				05BE4C7E2C3D46F200695D98 /* SceneDelegate.swift */,
 				05BE4C802C3D46F200695D98 /* ViewController.swift */,
@@ -62,6 +67,23 @@
 				05BE4C8A2C3D46F500695D98 /* Info.plist */,
 			);
 			path = DayTaskApp;
+			sourceTree = "<group>";
+		};
+		05BE4C902C3D493900695D98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05BE4C942C3D49CB00695D98 /* AppColors.swift */,
+				05BE4C912C3D496F00695D98 /* Extensions */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		05BE4C912C3D496F00695D98 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				05BE4C922C3D498F00695D98 /* UIColor+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 				05BE4C812C3D46F200695D98 /* ViewController.swift in Sources */,
 				05BE4C7D2C3D46F200695D98 /* AppDelegate.swift in Sources */,
 				05BE4C7F2C3D46F200695D98 /* SceneDelegate.swift in Sources */,
+				05BE4C952C3D49CB00695D98 /* AppColors.swift in Sources */,
+				05BE4C932C3D498F00695D98 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
