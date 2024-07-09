@@ -11,8 +11,6 @@ enum CoordinatorType {
     case app // main
     
     case login // login VC
-    case signup // registration VC
-    case resetPass // reset password VC
     
     case chat // chat VC
     case home // home VC
