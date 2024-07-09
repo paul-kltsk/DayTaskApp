@@ -14,6 +14,12 @@ class ViewController: UIViewController {
         
         view.backgroundColor = AppColors.darkBlue
         
+        let label = UILabel(frame: CGRect(x: 20, y: 110, width: 300, height: 50))
+        label.font = .Inter.regular.size(of: 30)
+        label.text = "kurwa nie wiem"
+        label.textColor = AppColors.yellow
+        view.addSubview(label)
+        
     }
 
 
