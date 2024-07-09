@@ -31,6 +31,12 @@
 		05BE4CC02C3D6A0D00695D98 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CBF2C3D6A0D00695D98 /* LoginPresenter.swift */; };
 		05BE4CC42C3D6A4300695D98 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CC32C3D6A4300695D98 /* LoginViewController.swift */; };
 		05BE4CC92C3D6CC700695D98 /* AuthSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CC82C3D6CC700695D98 /* AuthSceneFactory.swift */; };
+		05BE4CCB2C3D87C800695D98 /* MainSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CCA2C3D87C800695D98 /* MainSceneFactory.swift */; };
+		05BE4CCD2C3D883900695D98 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CCC2C3D883900695D98 /* HomeCoordinator.swift */; };
+		05BE4CCF2C3D889800695D98 /* ChatCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CCE2C3D889800695D98 /* ChatCoordinator.swift */; };
+		05BE4CD12C3D88BC00695D98 /* AddTaskCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CD02C3D88BC00695D98 /* AddTaskCoordinator.swift */; };
+		05BE4CD32C3D894F00695D98 /* CalendarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CD22C3D894F00695D98 /* CalendarCoordinator.swift */; };
+		05BE4CD52C3D89B400695D98 /* NotificationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CD42C3D89B400695D98 /* NotificationCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,12 @@
 		05BE4CBF2C3D6A0D00695D98 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		05BE4CC32C3D6A4300695D98 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		05BE4CC82C3D6CC700695D98 /* AuthSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSceneFactory.swift; sourceTree = "<group>"; };
+		05BE4CCA2C3D87C800695D98 /* MainSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSceneFactory.swift; sourceTree = "<group>"; };
+		05BE4CCC2C3D883900695D98 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		05BE4CCE2C3D889800695D98 /* ChatCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCoordinator.swift; sourceTree = "<group>"; };
+		05BE4CD02C3D88BC00695D98 /* AddTaskCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskCoordinator.swift; sourceTree = "<group>"; };
+		05BE4CD22C3D894F00695D98 /* CalendarCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarCoordinator.swift; sourceTree = "<group>"; };
+		05BE4CD42C3D89B400695D98 /* NotificationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +175,11 @@
 				05BE4CB32C3D5D7F00695D98 /* Coordinator.swift */,
 				05BE4CB52C3D5EDB00695D98 /* AppCoordinator.swift */,
 				05BE4CB82C3D67EF00695D98 /* LoginCoordinator.swift */,
+				05BE4CCC2C3D883900695D98 /* HomeCoordinator.swift */,
+				05BE4CCE2C3D889800695D98 /* ChatCoordinator.swift */,
+				05BE4CD02C3D88BC00695D98 /* AddTaskCoordinator.swift */,
+				05BE4CD22C3D894F00695D98 /* CalendarCoordinator.swift */,
+				05BE4CD42C3D89B400695D98 /* NotificationCoordinator.swift */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -197,7 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				05BE4CC52C3D6B2100695D98 /* Models */,
-				05BE4CBE2C3D699200695D98 /* Controllers */,
+				05BE4CBE2C3D699200695D98 /* Views */,
 				05BE4CBD2C3D686700695D98 /* Presenters */,
 			);
 			path = AuthScene;
@@ -218,12 +235,12 @@
 			path = Presenters;
 			sourceTree = "<group>";
 		};
-		05BE4CBE2C3D699200695D98 /* Controllers */ = {
+		05BE4CBE2C3D699200695D98 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				05BE4CC32C3D6A4300695D98 /* LoginViewController.swift */,
 			);
-			path = Controllers;
+			path = Views;
 			sourceTree = "<group>";
 		};
 		05BE4CC52C3D6B2100695D98 /* Models */ = {
@@ -245,6 +262,7 @@
 			isa = PBXGroup;
 			children = (
 				05BE4CC82C3D6CC700695D98 /* AuthSceneFactory.swift */,
+				05BE4CCA2C3D87C800695D98 /* MainSceneFactory.swift */,
 			);
 			path = SceneFactory;
 			sourceTree = "<group>";
@@ -330,14 +348,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				05BE4CB42C3D5D7F00695D98 /* Coordinator.swift in Sources */,
+				05BE4CD52C3D89B400695D98 /* NotificationCoordinator.swift in Sources */,
 				05BE4CC92C3D6CC700695D98 /* AuthSceneFactory.swift in Sources */,
 				05BE4CAD2C3D4FC500695D98 /* UIFont+Extension.swift in Sources */,
+				05BE4CD12C3D88BC00695D98 /* AddTaskCoordinator.swift in Sources */,
 				05BE4C7D2C3D46F200695D98 /* AppDelegate.swift in Sources */,
 				05BE4C7F2C3D46F200695D98 /* SceneDelegate.swift in Sources */,
+				05BE4CCD2C3D883900695D98 /* HomeCoordinator.swift in Sources */,
 				05BE4CC02C3D6A0D00695D98 /* LoginPresenter.swift in Sources */,
 				05BE4CB22C3D5D5C00695D98 /* TabBarController.swift in Sources */,
 				05BE4CB62C3D5EDB00695D98 /* AppCoordinator.swift in Sources */,
+				05BE4CCB2C3D87C800695D98 /* MainSceneFactory.swift in Sources */,
 				05BE4CB92C3D67EF00695D98 /* LoginCoordinator.swift in Sources */,
+				05BE4CCF2C3D889800695D98 /* ChatCoordinator.swift in Sources */,
+				05BE4CD32C3D894F00695D98 /* CalendarCoordinator.swift in Sources */,
 				05BE4C952C3D49CB00695D98 /* AppColors.swift in Sources */,
 				05BE4C932C3D498F00695D98 /* UIColor+Extension.swift in Sources */,
 				05BE4CC42C3D6A4300695D98 /* LoginViewController.swift in Sources */,

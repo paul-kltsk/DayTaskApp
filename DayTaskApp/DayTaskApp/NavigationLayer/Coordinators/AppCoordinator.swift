@@ -9,13 +9,14 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     
-    private let factory = AuthSceneFactory.self
+    private let authFactory = AuthSceneFactory.self
+    private let mainFactory = MainSceneFactory.self
     
     //Checking login, true? showMainFlow : showLoginFlow
     
     override func start() {
         print("App Coordinator start")
-        showAuthFlow()
+        showMainFlow()
     }
     
     override func finish() {
@@ -31,8 +32,14 @@ private extension AppCoordinator {
     
     func showAuthFlow() {
         guard let navigationController = navigationController else { return }
-        let loginCoordinator = factory.makeLoginFlow(finishDelegate: self, navigationController: navigationController, coordinator: self)
+        let loginCoordinator = authFactory.makeLoginFlow(finishDelegate: self, navigationController: navigationController, coordinator: self)
         loginCoordinator.start()
+    }
+    
+    func showMainFlow() {
+        guard let navigationController = navigationController else { return }
+        let tabBarController = mainFactory.makeMainFlow(finishDelegate: self,coordinator: self)
+        navigationController.pushViewController(tabBarController, animated: true)
     }
     
 }
