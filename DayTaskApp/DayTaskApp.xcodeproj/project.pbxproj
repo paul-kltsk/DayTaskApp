@@ -25,6 +25,9 @@
 		05BE4CAA2C3D4FB400695D98 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 05BE4C9F2C3D4FB400695D98 /* Inter-Thin.ttf */; };
 		05BE4CAB2C3D4FB400695D98 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 05BE4CA02C3D4FB400695D98 /* OFL.txt */; };
 		05BE4CAD2C3D4FC500695D98 /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CAC2C3D4FC500695D98 /* UIFont+Extension.swift */; };
+		05BE4CB22C3D5D5C00695D98 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CB12C3D5D5C00695D98 /* TabBarController.swift */; };
+		05BE4CB42C3D5D7F00695D98 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CB32C3D5D7F00695D98 /* Coordinator.swift */; };
+		05BE4CB62C3D5EDB00695D98 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4CB52C3D5EDB00695D98 /* AppCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +51,9 @@
 		05BE4C9F2C3D4FB400695D98 /* Inter-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Thin.ttf"; sourceTree = "<group>"; };
 		05BE4CA02C3D4FB400695D98 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		05BE4CAC2C3D4FC500695D98 /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		05BE4CB12C3D5D5C00695D98 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		05BE4CB32C3D5D7F00695D98 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		05BE4CB52C3D5EDB00695D98 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 		05BE4C7B2C3D46F200695D98 /* DayTaskApp */ = {
 			isa = PBXGroup;
 			children = (
+				05BE4CAE2C3D5D1A00695D98 /* NavigationLayer */,
 				05BE4C902C3D493900695D98 /* Resources */,
 				05BE4C7C2C3D46F200695D98 /* AppDelegate.swift */,
 				05BE4C7E2C3D46F200695D98 /* SceneDelegate.swift */,
@@ -133,6 +140,32 @@
 				05BE4CA02C3D4FB400695D98 /* OFL.txt */,
 			);
 			path = Inter;
+			sourceTree = "<group>";
+		};
+		05BE4CAE2C3D5D1A00695D98 /* NavigationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				05BE4CB02C3D5D3000695D98 /* Controllers */,
+				05BE4CAF2C3D5D2900695D98 /* Coordinators */,
+			);
+			path = NavigationLayer;
+			sourceTree = "<group>";
+		};
+		05BE4CAF2C3D5D2900695D98 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				05BE4CB32C3D5D7F00695D98 /* Coordinator.swift */,
+				05BE4CB52C3D5EDB00695D98 /* AppCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		05BE4CB02C3D5D3000695D98 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				05BE4CB12C3D5D5C00695D98 /* TabBarController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,10 +248,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05BE4CB42C3D5D7F00695D98 /* Coordinator.swift in Sources */,
 				05BE4CAD2C3D4FC500695D98 /* UIFont+Extension.swift in Sources */,
 				05BE4C812C3D46F200695D98 /* ViewController.swift in Sources */,
 				05BE4C7D2C3D46F200695D98 /* AppDelegate.swift in Sources */,
 				05BE4C7F2C3D46F200695D98 /* SceneDelegate.swift in Sources */,
+				05BE4CB22C3D5D5C00695D98 /* TabBarController.swift in Sources */,
+				05BE4CB62C3D5EDB00695D98 /* AppCoordinator.swift in Sources */,
 				05BE4C952C3D49CB00695D98 /* AppColors.swift in Sources */,
 				05BE4C932C3D498F00695D98 /* UIColor+Extension.swift in Sources */,
 			);
