@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05416F7C2C3EA6E70030233B /* DTTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05416F7B2C3EA6E70030233B /* DTTextField.swift */; };
 		05BE4C7D2C3D46F200695D98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4C7C2C3D46F200695D98 /* AppDelegate.swift */; };
 		05BE4C7F2C3D46F200695D98 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05BE4C7E2C3D46F200695D98 /* SceneDelegate.swift */; };
 		05BE4C862C3D46F500695D98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05BE4C852C3D46F500695D98 /* Assets.xcassets */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05416F7B2C3EA6E70030233B /* DTTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTTextField.swift; sourceTree = "<group>"; };
 		05BE4C792C3D46F200695D98 /* DayTaskApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayTaskApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05BE4C7C2C3D46F200695D98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05BE4C7E2C3D46F200695D98 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05416F792C3EA6960030233B /* LoginScene */ = {
+			isa = PBXGroup;
+			children = (
+				05BE4CC32C3D6A4300695D98 /* LoginViewController.swift */,
+				05BE4CBF2C3D6A0D00695D98 /* LoginPresenter.swift */,
+			);
+			path = LoginScene;
+			sourceTree = "<group>";
+		};
+		05416F7A2C3EA6AE0030233B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				05416F7B2C3EA6E70030233B /* DTTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		05BE4C702C3D46F200695D98 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				05BE4CB72C3D646D00695D98 /* UILayer */,
+				05416F7A2C3EA6AE0030233B /* Views */,
 				05BE4CAE2C3D5D1A00695D98 /* NavigationLayer */,
 				05BE4C902C3D493900695D98 /* Resources */,
 				05BE4C7C2C3D46F200695D98 /* AppDelegate.swift */,
@@ -213,9 +233,7 @@
 		05BE4CBB2C3D685300695D98 /* AuthScene */ = {
 			isa = PBXGroup;
 			children = (
-				05BE4CC52C3D6B2100695D98 /* Models */,
-				05BE4CBE2C3D699200695D98 /* Views */,
-				05BE4CBD2C3D686700695D98 /* Presenters */,
+				05416F792C3EA6960030233B /* LoginScene */,
 			);
 			path = AuthScene;
 			sourceTree = "<group>";
@@ -225,29 +243,6 @@
 			children = (
 			);
 			path = MainScene;
-			sourceTree = "<group>";
-		};
-		05BE4CBD2C3D686700695D98 /* Presenters */ = {
-			isa = PBXGroup;
-			children = (
-				05BE4CBF2C3D6A0D00695D98 /* LoginPresenter.swift */,
-			);
-			path = Presenters;
-			sourceTree = "<group>";
-		};
-		05BE4CBE2C3D699200695D98 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				05BE4CC32C3D6A4300695D98 /* LoginViewController.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		05BE4CC52C3D6B2100695D98 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		05BE4CC62C3D6C6700695D98 /* Factory */ = {
@@ -350,6 +345,7 @@
 				05BE4CB42C3D5D7F00695D98 /* Coordinator.swift in Sources */,
 				05BE4CD52C3D89B400695D98 /* NotificationCoordinator.swift in Sources */,
 				05BE4CC92C3D6CC700695D98 /* AuthSceneFactory.swift in Sources */,
+				05416F7C2C3EA6E70030233B /* DTTextField.swift in Sources */,
 				05BE4CAD2C3D4FC500695D98 /* UIFont+Extension.swift in Sources */,
 				05BE4CD12C3D88BC00695D98 /* AddTaskCoordinator.swift in Sources */,
 				05BE4C7D2C3D46F200695D98 /* AppDelegate.swift in Sources */,

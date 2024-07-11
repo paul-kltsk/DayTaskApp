@@ -14,6 +14,7 @@ class LoginCoordinator: Coordinator {
     
     //MARK: - Methods
     override func start() {
+        print("Login coordinator start")
         showAuthScene()
     }
     
